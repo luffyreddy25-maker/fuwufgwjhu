@@ -1,0 +1,165 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "9efa66c9119d7a3d090e",
+  "position": {
+    "x": 699,
+    "y": 0,
+    "z": 2,
+    "height": 445,
+    "width": 581,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimension_date"
+                        }
+                      },
+                      "Property": "DayNumber"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dimension_date.DayNumber)",
+              "nativeQueryRef": "Sum of DayNumber"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimension_date"
+                        }
+                      },
+                      "Property": "FiscalMonthNumber"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dimension_date.FiscalMonthNumber)",
+              "nativeQueryRef": "Sum of FiscalMonthNumber"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimension_date"
+                        }
+                      },
+                      "Property": "FiscalYear"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dimension_date.FiscalYear)",
+              "nativeQueryRef": "Sum of FiscalYear"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "dimension_date"
+                      }
+                    },
+                    "Property": "DayNumber"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4439909e425082529c8c",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dimension_date"
+                  }
+                },
+                "Property": "DayNumber"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "04d5024147e936c2d402",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dimension_date"
+                  }
+                },
+                "Property": "FiscalMonthNumber"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5ef54efdf5027e4f8e84",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dimension_date"
+                  }
+                },
+                "Property": "FiscalYear"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
