@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "hvkitk"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a0a707fe-6732-9dc6-4690-89bcc0a3493f"
+  }
+}
