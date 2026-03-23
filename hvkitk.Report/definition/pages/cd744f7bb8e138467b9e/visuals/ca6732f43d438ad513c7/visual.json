@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "ca6732f43d438ad513c7",
+  "position": {
+    "x": 529.1338582677165,
+    "y": 62.15223097112861,
+    "z": 2,
+    "height": 351.07611548556429,
+    "width": 562.72965879265087,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_stock_item"
+                    }
+                  },
+                  "Property": "Barcode"
+                }
+              },
+              "queryRef": "dimension_stock_item.Barcode",
+              "nativeQueryRef": "Barcode"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_stock_item"
+                    }
+                  },
+                  "Property": "Brand"
+                }
+              },
+              "queryRef": "dimension_stock_item.Brand",
+              "nativeQueryRef": "Brand"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "71dfe6103e7727a37ba8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_stock_item"
+              }
+            },
+            "Property": "Barcode"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fa4ea5212ecc0495ca4e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_stock_item"
+              }
+            },
+            "Property": "Brand"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byConnection": {
-      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/github testtt\";initial catalog=\"another test\";integrated security=ClaimsToken;semanticmodelid=bf5a7bee-ea30-40a0-9345-a15101e8a2d3"
+      "connectionString": "Data Source=\"powerbi://api.powerbi.com/v1.0/myorg/github testtt\";initial catalog=\"another test\";access mode=readonly;integrated security=ClaimsToken;semanticmodelid=bf5a7bee-ea30-40a0-9345-a15101e8a2d3"
     }
   }
 }

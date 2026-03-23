@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "d60aa81edbaa32d64442",
+  "name": "2f0684d81323a94ec553",
   "position": {
-    "x": 0,
-    "y": 0,
+    "x": 458.58267716535431,
+    "y": 63.832020997375324,
     "z": 1,
-    "height": 359.47506561679791,
-    "width": 562.72965879265087,
+    "height": 500.57742782152229,
+    "width": 821.41732283464569,
     "tabOrder": 1
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "dimension_city"
                     }
                   },
-                  "Property": "Location"
+                  "Property": "Subregion"
                 }
               },
-              "queryRef": "dimension_city.Location",
-              "nativeQueryRef": "Location"
+              "queryRef": "dimension_city.Subregion",
+              "nativeQueryRef": "Subregion"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "dimension_city"
                     }
                   },
-                  "Property": "Region"
+                  "Property": "ValidFrom"
                 }
               },
-              "queryRef": "dimension_city.Region",
-              "nativeQueryRef": "Region"
+              "queryRef": "dimension_city.ValidFrom",
+              "nativeQueryRef": "ValidFrom"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "dimension_city"
                     }
                   },
-                  "Property": "SalesTerritory"
+                  "Property": "StateProvince"
                 }
               },
-              "queryRef": "dimension_city.SalesTerritory",
-              "nativeQueryRef": "SalesTerritory"
+              "queryRef": "dimension_city.StateProvince",
+              "nativeQueryRef": "StateProvince"
             }
           ]
         }
@@ -66,7 +66,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "a681eac8cefc94a04ecb",
+        "name": "a5cbf32f26f84a6d2cf4",
         "field": {
           "Column": {
             "Expression": {
@@ -74,13 +74,13 @@
                 "Entity": "dimension_city"
               }
             },
-            "Property": "Location"
+            "Property": "Subregion"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "6b3e47b0bc18942bca48",
+        "name": "dae7fea9aef83a973670",
         "field": {
           "Column": {
             "Expression": {
@@ -88,13 +88,13 @@
                 "Entity": "dimension_city"
               }
             },
-            "Property": "Region"
+            "Property": "ValidFrom"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "2831802ff134a5125334",
+        "name": "77e2ca2fec3d8aaf4297",
         "field": {
           "Column": {
             "Expression": {
@@ -102,7 +102,7 @@
                 "Entity": "dimension_city"
               }
             },
-            "Property": "SalesTerritory"
+            "Property": "StateProvince"
           }
         },
         "type": "Categorical"
