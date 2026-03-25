@@ -1,5 +1,5 @@
 {
-  "name": "CY26SU02",
+  "name": "CY25SU12",
   "dataColors": [
     "#118DFF",
     "#12239E",
@@ -726,11 +726,6 @@
             "backgroundTransparency": 0,
             "gridLineType": "inner"
           }
-        ],
-        "seriesLabels": [
-          {
-            "backgroundTransparency": 0.9
-          }
         ]
       }
     },
@@ -745,11 +740,6 @@
           {
             "backgroundTransparency": 0,
             "gridLineType": "inner"
-          }
-        ],
-        "seriesLabels": [
-          {
-            "backgroundTransparency": 0.9
           }
         ]
       }
