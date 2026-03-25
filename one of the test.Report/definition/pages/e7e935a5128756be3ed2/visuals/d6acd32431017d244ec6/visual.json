@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "d6acd32431017d244ec6",
+  "position": {
+    "x": 136.06299212598424,
+    "y": 63.832020997375324,
+    "z": 0,
+    "height": 435.06561679790025,
+    "width": 552.65091863517057,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_date"
+                    }
+                  },
+                  "Property": "CalendarMonthLabel"
+                }
+              },
+              "queryRef": "dimension_date.CalendarMonthLabel",
+              "nativeQueryRef": "CalendarMonthLabel"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimension_date"
+                        }
+                      },
+                      "Property": "CalendarMonthNumber"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dimension_date.CalendarMonthNumber)",
+              "nativeQueryRef": "Sum of CalendarMonthNumber"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dimension_date"
+                        }
+                      },
+                      "Property": "CalendarYear"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(dimension_date.CalendarYear)",
+              "nativeQueryRef": "Sum of CalendarYear"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2b8d76d1ae15f2123840",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_date"
+              }
+            },
+            "Property": "CalendarMonthLabel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8094303fc9051261eb8b",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dimension_date"
+                  }
+                },
+                "Property": "CalendarMonthNumber"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cc5e4c1bc3cc723f1cbf",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "dimension_date"
+                  }
+                },
+                "Property": "CalendarYear"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
