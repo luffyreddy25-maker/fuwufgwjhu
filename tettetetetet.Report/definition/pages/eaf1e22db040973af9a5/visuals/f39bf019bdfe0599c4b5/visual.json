@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "f39bf019bdfe0599c4b5",
+  "position": {
+    "x": 843,
+    "y": 0,
+    "z": 1,
+    "height": 601,
+    "width": 437,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_customer"
+                    }
+                  },
+                  "Property": "BillToCustomer"
+                }
+              },
+              "queryRef": "dimension_customer.BillToCustomer",
+              "nativeQueryRef": "BillToCustomer"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dimension_customer"
+                    }
+                  },
+                  "Property": "BuyingGroup"
+                }
+              },
+              "queryRef": "dimension_customer.BuyingGroup",
+              "nativeQueryRef": "BuyingGroup"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1b479851ff028fe6b146",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_customer"
+              }
+            },
+            "Property": "BillToCustomer"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d99c0bb1778ddff24e8b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dimension_customer"
+              }
+            },
+            "Property": "BuyingGroup"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
