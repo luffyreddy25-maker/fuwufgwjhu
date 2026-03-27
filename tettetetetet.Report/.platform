@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "tettetetetet"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8b54e0f4-532d-a06d-4e60-450beb06c794"
+  }
+}
